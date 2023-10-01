@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/animation.css">
+        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+        <title>ខ្មោច</title>
+    </head>
+    <body>
+        <header id="header">
+            <div id="apagnan"><a href="/index.html">Godefroy Richard</a></div>
+            <nav>
+                <li>
+                    <ul><a href="../html/work.html">Works</a></ul>
+                    <ul><a href="../html/posts.html">Posts</a></ul>
+                    <ul><a href="../html/uses.html">Uses</a></ul>
+                    <ul><a href="https://github.com/rarayse">Source</a></ul>
+                </li>
+            </nav>
+            <div id="div_image">
+                <img src="../img/brightness-high-fill.svg" id="dark-mode-toggle" class="dark-mode-toggle">
+            </div>
+        </header>
+        <main class ="content">
+            <div id="krampte">
+                Work in progress
+            </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("header");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+            </script>
+        </main>
+    </body>
+</html>
